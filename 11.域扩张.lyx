@@ -1,0 +1,586 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+域扩张
+\end_layout
+
+\begin_layout Enumerate
+域扩张: 设
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+是域, 若
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+是域
+\begin_inset Formula $\mathbb{E}$
+\end_inset
+
+的子域, 则称
+\begin_inset Formula $\mathbb{E}$
+\end_inset
+
+为
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+的域扩张(或简称扩张), 记为
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+此时, 
+\begin_inset Formula $\mathbb{E}$
+\end_inset
+
+为
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+上的向量空间;
+\end_layout
+
+\begin_layout Enumerate
+次数: 
+\begin_inset Formula $\dim_{\mathbb{F}}\mathbb{E}$
+\end_inset
+
+称为
+\begin_inset Formula $\mathbb{E}$
+\end_inset
+
+关于
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+的次数, 记为
+\begin_inset Formula $[\mathbb{E}:\mathbb{F}]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+有限扩张: 
+\begin_inset Formula $[\mathbb{E}:\mathbb{F}]<\infty$
+\end_inset
+
+.
+ 反之为无限扩张;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+代数元: 设
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+是域的扩张, 
+\begin_inset Formula $\alpha\in\mathbb{E}$
+\end_inset
+
+, 若存在不全为零的
+\begin_inset Formula $a_{0},a_{1},...,a_{n}\in\mathbb{F}$
+\end_inset
+
+, 使得
+\begin_inset Formula $a_{0}+a_{1}\alpha+...+a_{n}\alpha^{n}=0$
+\end_inset
+
+, 则称
+\begin_inset Formula $\alpha$
+\end_inset
+
+为
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+上的代数元;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+超越元: 不是代数元的, 称其为超越元;
+\end_layout
+
+\begin_layout Enumerate
+代数数: 
+\begin_inset Formula $\mathbb{C}/\mathbb{Q}$
+\end_inset
+
+上的代数元;
+\end_layout
+
+\begin_layout Enumerate
+超越数: 
+\begin_inset Formula $\mathbb{C}/\mathbb{Q}$
+\end_inset
+
+上的超越元;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+代数扩张: 设
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+是域的扩张, 如
+\begin_inset Formula $\mathbb{E}$
+\end_inset
+
+中的元均为
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+上的代数元, 则称
+\begin_inset Formula $\mathbb{E}$
+\end_inset
+
+为
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+的代数扩张;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+超越扩张: 不是代数扩张的, 称为超越扩张;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+最小多项式: 设
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+是域的扩张, 
+\begin_inset Formula $\alpha\in\mathbb{E}$
+\end_inset
+
+是
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+上的代数元, 则有环同态
+\begin_inset Formula $\varphi:\mathbb{F}[x]\to\mathbb{E}$
+\end_inset
+
+(
+\begin_inset Formula $f(x)\to f(\alpha)$
+\end_inset
+
+).
+ 存在
+\begin_inset Formula $p(x)\in\mathbb{F}[x]$
+\end_inset
+
+, 使得
+\begin_inset Formula $Ker\varphi=(p(x))$
+\end_inset
+
+.
+ 若
+\begin_inset Formula $p(x)$
+\end_inset
+
+首项系数为
+\begin_inset Formula $1$
+\end_inset
+
+, 则
+\begin_inset Formula $p(x)$
+\end_inset
+
+唯一确定, 这样的
+\begin_inset Formula $p(x)$
+\end_inset
+
+被称为
+\begin_inset Formula $\alpha$
+\end_inset
+
+的极小多项式;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p(\alpha)=0$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p(x)$
+\end_inset
+
+是
+\begin_inset Formula $\mathbb{F}[x]$
+\end_inset
+
+中的不可约元,和素元;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $f(\alpha)=0$
+\end_inset
+
+, 则
+\begin_inset Formula $p(x)|f(x)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+有限扩张是代数扩张;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{F}/\mathbb{K}$
+\end_inset
+
+是域的扩张, 则:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+望远镜公式: 
+\begin_inset Formula $[\mathbb{E}:\mathbb{K}]=[\mathbb{E}:\mathbb{F}][\mathbb{F}:\mathbb{K}]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathbb{E}/\mathbb{K}$
+\end_inset
+
+为有限扩张
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{F}/\mathbb{K}$
+\end_inset
+
+均是有限扩张;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+单扩张: 设
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+是晕的扩张, 
+\begin_inset Formula $\alpha\in\mathbb{E}$
+\end_inset
+
+, 用
+\begin_inset Formula $\mathbb{F}(\alpha)$
+\end_inset
+
+表示
+\begin_inset Formula $\mathbb{E}$
+\end_inset
+
+中含
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+及
+\begin_inset Formula $\alpha$
+\end_inset
+
+的最小子域, 称其为单扩张.
+ 有
+\begin_inset Formula $\mathbb{F}(\alpha)=\{f(\alpha)/g(\alpha)|f(x),g(x)\in\mathbb{F}[x],g(\alpha)\neq0\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+是域的扩张, 
+\begin_inset Formula $\alpha\in\mathbb{E}$
+\end_inset
+
+是
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+上的代数元, 则
+\begin_inset Formula $\mathbb{F}(\alpha)=\mathbb{F}[\alpha]$
+\end_inset
+
+, 且
+\begin_inset Formula $[\mathbb{F}(\alpha):\mathbb{F}]=\alpha$
+\end_inset
+
+的极小多项式的次数;
+\end_layout
+
+\begin_layout Enumerate
+有限生成扩张: 设
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+是域的扩张, 若存在有限个元
+\begin_inset Formula $\alpha_{1},\alpha_{2},...,\alpha_{n}\in\mathbb{E}$
+\end_inset
+
+, 使得
+\begin_inset Formula $\mathbb{E}=\mathbb{F}(\alpha_{1},\alpha_{2},...,\alpha_{n})$
+\end_inset
+
+, 则称
+\begin_inset Formula $\mathbb{E}$
+\end_inset
+
+是
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+的有限生成扩张;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $\mathbb{E}=\mathbb{F}(\alpha_{1},...,\alpha_{n})$
+\end_inset
+
+, 且
+\begin_inset Formula $\alpha_{1},...,\alpha_{n}$
+\end_inset
+
+为
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+上的代数元, 则
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+是有限扩张;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+是有限扩张, 则
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+是有限生成扩张;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $\mathbb{F}/\mathbb{K}$
+\end_inset
+
+是代数扩张, 
+\begin_inset Formula $u$
+\end_inset
+
+是
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+上的代数元, 则
+\begin_inset Formula $u$
+\end_inset
+
+在
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+上也是代数元;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $\mathbb{E}/\mathbb{F}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{F}/\mathbb{K}$
+\end_inset
+
+是域的扩张, 则
+\begin_inset Formula $\mathbb{E}/\mathbb{K}$
+\end_inset
+
+是代数扩张
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $\mathbb{E}/\mathbb{F},\mathbb{F}/\mathbb{K}$
+\end_inset
+
+均是代数扩张;
+\end_layout
+
+\begin_layout Enumerate
+代数封闭域: 对域
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+, 若满足
+\begin_inset Formula $u$
+\end_inset
+
+是
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+的某个扩域中的元素, 并且
+\begin_inset Formula $u$
+\end_inset
+
+是
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+上的代数元, 则有
+\begin_inset Formula $u\in\mathbb{K}$
+\end_inset
+
+, 那么称
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+为代数封闭域;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+代数闭包: 设
+\begin_inset Formula $\mathbb{F}/\mathbb{K}$
+\end_inset
+
+为域的扩张, 若
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+为代数封闭域, 且
+\begin_inset Formula $\mathbb{F}/\mathbb{K}$
+\end_inset
+
+是代数扩张, 则称
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+是
+\begin_inset Formula $\mathbb{K}$
+\end_inset
+
+的代数闭包;
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

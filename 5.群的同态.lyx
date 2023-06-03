@@ -1,0 +1,792 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+群的同态
+\end_layout
+
+\begin_layout Enumerate
+群的同态: 设
+\begin_inset Formula $(G,\cdot)$
+\end_inset
+
+和
+\begin_inset Formula $(G',\circ)$
+\end_inset
+
+是两个群, 若映射
+\begin_inset Formula $f:G\to G'$
+\end_inset
+
+满足
+\begin_inset Formula $\forall a,b\in G$
+\end_inset
+
+, 有
+\begin_inset Formula $f(a\cdot b)=f(a)\circ f(b)$
+\end_inset
+
+, 则称
+\begin_inset Formula $f$
+\end_inset
+
+是群
+\begin_inset Formula $G$
+\end_inset
+
+到
+\begin_inset Formula $G'$
+\end_inset
+
+的同态;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+单同态: 若
+\begin_inset Formula $f$
+\end_inset
+
+是单射, 则
+\begin_inset Formula $f$
+\end_inset
+
+为单同态;
+\end_layout
+
+\begin_layout Enumerate
+满同态: 若
+\begin_inset Formula $f$
+\end_inset
+
+是满射, 则
+\begin_inset Formula $f$
+\end_inset
+
+是满同态;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $G,H$
+\end_inset
+
+为群, 
+\begin_inset Formula $f:G\to H$
+\end_inset
+
+是群的同态, 则
+\begin_inset Formula $f(e_{G})=e_{H}$
+\end_inset
+
+, 且
+\begin_inset Formula $\forall a\in G$
+\end_inset
+
+, 有
+\begin_inset Formula $f(a^{-1})=f(a)^{-1}$
+\end_inset
+
+.
+ 即群同态将单位元映射到单位元, 逆元映射到逆元;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+同构: 若同态映射
+\begin_inset Formula $f$
+\end_inset
+
+是双射, 则
+\begin_inset Formula $f$
+\end_inset
+
+是群
+\begin_inset Formula $G$
+\end_inset
+
+到
+\begin_inset Formula $G'$
+\end_inset
+
+的同构.
+ 记为
+\begin_inset Formula $f:G\tilde{\to}G'$
+\end_inset
+
+或
+\begin_inset Formula $G\cong G'$
+\end_inset
+
+.
+ 同构的群被认为本质上是相同的;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+群
+\begin_inset Formula $G$
+\end_inset
+
+到自身的同态(同构)叫做群
+\begin_inset Formula $G$
+\end_inset
+
+的自同态(自同构);
+\end_layout
+
+\begin_layout Enumerate
+记
+\begin_inset Formula $Aut(G)$
+\end_inset
+
+为群
+\begin_inset Formula $G$
+\end_inset
+
+的自同构全体, 则它构成群;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+循环群的性质: 设
+\begin_inset Formula $G=<a>$
+\end_inset
+
+是由
+\begin_inset Formula $a$
+\end_inset
+
+生成的循环群, 则:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $o(a)=\infty$
+\end_inset
+
+, 则
+\begin_inset Formula $G\cong(\mathbb{Z},+)$
+\end_inset
+
+, 称
+\begin_inset Formula $G$
+\end_inset
+
+为无限循环群;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $o(a)=n$
+\end_inset
+
+, 则
+\begin_inset Formula $G\cong(\mathbb{Z}_{n},+)$
+\end_inset
+
+, 称
+\begin_inset Formula $G$
+\end_inset
+
+为
+\begin_inset Formula $n$
+\end_inset
+
+阶循环群;
+\end_layout
+
+\begin_layout Enumerate
+同阶循环群彼此同构;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbb{Z},+)$
+\end_inset
+
+的生成元只有
+\begin_inset Formula $1$
+\end_inset
+
+或
+\begin_inset Formula $-1$
+\end_inset
+
+; 
+\begin_inset Formula $(\mathbb{Z}_{n},+)$
+\end_inset
+
+的生成元只能是
+\begin_inset Formula $\bar{a}$
+\end_inset
+
+, 其中
+\begin_inset Formula $(a,n)=1$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+即若
+\begin_inset Formula $o(a)=\infty$
+\end_inset
+
+, 则
+\begin_inset Formula $G$
+\end_inset
+
+的生成元只有
+\begin_inset Formula $a$
+\end_inset
+
+和
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+; 若
+\begin_inset Formula $o(a)=n$
+\end_inset
+
+, 则
+\begin_inset Formula $G$
+\end_inset
+
+的生成元只有
+\begin_inset Formula $a^{k}(1\le k<n,(k,n)=1)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+循环群的子群仍然是循环群, 且:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbb{Z},+)$
+\end_inset
+
+的全部子群
+\begin_inset Formula $H_{m}=<m>,m=0,1,2,...$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbb{Z}_{n},+)$
+\end_inset
+
+的全部子群为
+\begin_inset Formula $<\bar{0}>$
+\end_inset
+
+和
+\begin_inset Formula $<\bar{d}>$
+\end_inset
+
+, 
+\begin_inset Formula $d|n$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+循环群的同构群:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbb{Z},+)$
+\end_inset
+
+的自同构群
+\begin_inset Formula $Aut(\mathbb{Z})$
+\end_inset
+
+是二元群;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(\mathbb{Z}_{n},+)$
+\end_inset
+
+的自同构群
+\begin_inset Formula $Aut(\mathbb{Z}_{n})$
+\end_inset
+
+是同构于
+\begin_inset Formula $(\mathbb{\mathbb{Z}}_{n}^{*},\cdot)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+自共轭子群: 共轭子群只有自身的子群;
+\end_layout
+
+\begin_layout Enumerate
+正规子群: 设
+\begin_inset Formula $G$
+\end_inset
+
+是群, 
+\begin_inset Formula $N\le G$
+\end_inset
+
+称为
+\begin_inset Formula $G$
+\end_inset
+
+的正规子群, 若对
+\begin_inset Formula $\forall g\in G$
+\end_inset
+
+, 有
+\begin_inset Formula $g^{-1}Ng=N$
+\end_inset
+
+, 记为
+\begin_inset Formula $N\triangleleft G$
+\end_inset
+
+(即
+\begin_inset Formula $N$
+\end_inset
+
+是
+\begin_inset Formula $G$
+\end_inset
+
+中的自共轭子群);
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+等价条件:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $N\triangleleft G$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall g\in G,gN=Ng$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $N_{G}(N)=G$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G$
+\end_inset
+
+对于
+\begin_inset Formula $N$
+\end_inset
+
+的每个左陪集均是右陪集;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall g\in G,h\in N$
+\end_inset
+
+, 有
+\begin_inset Formula $g^{-1}hg\in N$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+商群: 设
+\begin_inset Formula $G$
+\end_inset
+
+是群, 
+\begin_inset Formula $N\triangleleft G$
+\end_inset
+
+, 对
+\begin_inset Formula $\forall a\in G$
+\end_inset
+
+, 记
+\begin_inset Formula $\bar{a}=Na=aN$
+\end_inset
+
+.
+ 在集合
+\begin_inset Formula $\bar{G}=\{\bar{a}|a\in G\}$
+\end_inset
+
+上定义二元运算
+\begin_inset Formula $\bar{a}\cdot\bar{b}=\overline{ab}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+对此运算形成群(幺元
+\begin_inset Formula $\bar{e}$
+\end_inset
+
+, 逆元
+\begin_inset Formula $\bar{a}^{-1}=\overline{a^{-1}}$
+\end_inset
+
+), 称为
+\begin_inset Formula $G$
+\end_inset
+
+对正规子群
+\begin_inset Formula $N$
+\end_inset
+
+的商群, 记为
+\begin_inset Formula $\bar{G}=G/N$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $G$
+\end_inset
+
+是有限群, 则
+\begin_inset Formula $|G/N|=[G:N]=[G]/|N|$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+同态定理: 设
+\begin_inset Formula $f:G\to G'$
+\end_inset
+
+是群的同态, 则:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $Imf=f(G)\le G'$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Kerf=f^{-1}(e_{G'})=\{g\in G|f(g)=e_{G'}\}\triangleleft G$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+映射
+\begin_inset Formula $\pi:G\to G/Kerf$
+\end_inset
+
+, 
+\begin_inset Formula $\pi(g)=gKerf$
+\end_inset
+
+是满同态;
+\end_layout
+
+\begin_layout Enumerate
+存在唯一同态
+\begin_inset Formula $\bar{f}:G/Kerf\to G'$
+\end_inset
+
+, 使得
+\begin_inset Formula $f=\bar{f}\circ\pi$
+\end_inset
+
+, 且
+\begin_inset Formula $\bar{f}$
+\end_inset
+
+是单同态(称
+\begin_inset Formula $\bar{f}$
+\end_inset
+
+是由
+\begin_inset Formula $f$
+\end_inset
+
+诱导的同态);
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $Im\bar{f}=Imf$
+\end_inset
+
+, 即
+\begin_inset Formula $\bar{f}:G/Kerf\tilde{\to}Imf$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+同态基本定理: 设
+\begin_inset Formula $f:G\to G'$
+\end_inset
+
+是群的同态, 则
+\begin_inset Formula $Imf=f(G)$
+\end_inset
+
+是
+\begin_inset Formula $G'$
+\end_inset
+
+的子群, 
+\begin_inset Formula $Kerf=f^{-1}(e_{G'})=\{g\in G|f(g)=e_{G'}\}$
+\end_inset
+
+是
+\begin_inset Formula $G$
+\end_inset
+
+的正规子群, 并且有群同构
+\begin_inset Formula $\bar{f}:G/Kerf\tilde{\to}Imf$
+\end_inset
+
+, (
+\begin_inset Formula $\bar{g}\mapsto f(g)$
+\end_inset
+
+);
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+推论: 设
+\begin_inset Formula $f:G\to G'$
+\end_inset
+
+是群的同态, 则
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+是单同态
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $Kerf=\{e_{G}\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $f$
+\end_inset
+
+是满同态, 则有(正则)同构
+\begin_inset Formula $\bar{f}:G/Kerf\tilde{\to}G'$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+设G是群, 
+\begin_inset Formula $N\triangleleft G$
+\end_inset
+
+, 则
+\begin_inset Formula $\{M|N\le M\le G\}\leftrightarrow\{\texttt{subgroups of }G/N\}$
+\end_inset
+
+, 
+\begin_inset Formula $\{M|N\le M\le G\}\leftrightarrow\{\texttt{invariant subgroups of }G/N\}$
+\end_inset
+
+, 且对
+\begin_inset Formula $N\le M\le G$
+\end_inset
+
+, 有
+\begin_inset Formula $M\triangleleft G\Leftrightarrow M/N\triangleleft G/N$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $G$
+\end_inset
+
+是群, 
+\begin_inset Formula $N,M\triangleleft G$
+\end_inset
+
+, 且
+\begin_inset Formula $N\le M$
+\end_inset
+
+, 则
+\begin_inset Formula $N\triangleleft M$
+\end_inset
+
+, 
+\begin_inset Formula $M/N\triangleleft G/N$
+\end_inset
+
+, 且
+\begin_inset Formula $(G/N)/(M/N)\cong G/M$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $G$
+\end_inset
+
+是群, 
+\begin_inset Formula $N\triangleleft G$
+\end_inset
+
+, 且
+\begin_inset Formula $H\le G$
+\end_inset
+
+, 则
+\begin_inset Formula $(H\cap N)\triangleleft H$
+\end_inset
+
+, 
+\begin_inset Formula $N\triangleleft NH\le G$
+\end_inset
+
+, 并且
+\begin_inset Formula $NH/N\cong H/(H\cap N)$
+\end_inset
+
+;
+\end_layout
+
+\end_body
+\end_document

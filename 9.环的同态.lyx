@@ -1,0 +1,696 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+环的同态
+\end_layout
+
+\begin_layout Enumerate
+环的同态: 
+\begin_inset Formula $R,S$
+\end_inset
+
+为环, 映射
+\begin_inset Formula $f:R\to S$
+\end_inset
+
+满足
+\begin_inset Formula $\forall a,b\in R,f(a+b)=f(a)+f(b)$
+\end_inset
+
+
+\begin_inset Formula $,f(ab)=f(a)f(b)$
+\end_inset
+
+, 则称
+\begin_inset Formula $f$
+\end_inset
+
+为
+\begin_inset Formula $R$
+\end_inset
+
+到
+\begin_inset Formula $S$
+\end_inset
+
+的同态;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+环同态
+\begin_inset Formula $f$
+\end_inset
+
+亦为加法群同态, 故
+\begin_inset Formula $f(0_{R})=0_{S},f(-a)=-f(a)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+单(满)同态: 
+\begin_inset Formula $f$
+\end_inset
+
+是同态, 且
+\begin_inset Formula $f$
+\end_inset
+
+为单(满)射, 则称
+\begin_inset Formula $f$
+\end_inset
+
+为单(满)同态;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $f$
+\end_inset
+
+是满同态, 且
+\begin_inset Formula $R,S$
+\end_inset
+
+均有幺元, 则
+\begin_inset Formula $f(1_{R})=1_{S}$
+\end_inset
+
+, 且
+\begin_inset Formula $a\in U(R)\Rightarrow f(a)\in U(S)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $f:R\to S$
+\end_inset
+
+是环的同态:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+同态的像: 集合
+\begin_inset Formula $Imf=f(R)=\{f(r)|r\in R\}$
+\end_inset
+
+, 同态的像是
+\begin_inset Formula $S$
+\end_inset
+
+的子环;
+\end_layout
+
+\begin_layout Enumerate
+同态的核: 集合
+\begin_inset Formula $Kerf=f^{-1}(0_{S})=\{r\in R|f(r)=0_{S}\}$
+\end_inset
+
+, 同态的核是
+\begin_inset Formula $R$
+\end_inset
+
+的理想;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+同构: 若
+\begin_inset Formula $f$
+\end_inset
+
+是环同态, 且
+\begin_inset Formula $f$
+\end_inset
+
+是一一映射, 则称
+\begin_inset Formula $f$
+\end_inset
+
+为环的同构;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $f$
+\end_inset
+
+是同构, 则
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+也是同构;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+自同态(同构): 同态(同构)
+\begin_inset Formula $f:R\to R$
+\end_inset
+
+被称为自同态(同构);
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+环的所有自同构(
+\begin_inset Formula $Aut(R)$
+\end_inset
+
+)关于复合运算构成群;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+嵌入: 若
+\begin_inset Formula $f:R\to S$
+\end_inset
+
+是环的单同态, 则称
+\begin_inset Formula $f$
+\end_inset
+
+为环
+\begin_inset Formula $R$
+\end_inset
+
+到
+\begin_inset Formula $S$
+\end_inset
+
+的嵌入;
+\end_layout
+
+\begin_layout Enumerate
+第一同构定理: 设
+\begin_inset Formula $f:R\to S$
+\end_inset
+
+是环的同态, 则
+\begin_inset Formula $Kerf$
+\end_inset
+
+是
+\begin_inset Formula $R$
+\end_inset
+
+的理想, 并且
+\begin_inset Formula $\bar{f}:R/Kerf\to S$
+\end_inset
+
+(
+\begin_inset Formula $\bar{r}\to f(r)$
+\end_inset
+
+)是环的单同态(嵌入);
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+特别的: 
+\begin_inset Formula $\bar{f}:R/Kerf\tilde{\to}Imf$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+第二同构定理: 设
+\begin_inset Formula $I,J$
+\end_inset
+
+是环
+\begin_inset Formula $R$
+\end_inset
+
+的理想, 则
+\begin_inset Formula $I/(I\cap J)\tilde{=}(I+J)/J$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+第三同构定理: 设
+\begin_inset Formula $I,J$
+\end_inset
+
+是环
+\begin_inset Formula $R$
+\end_inset
+
+的理想, 若
+\begin_inset Formula $I\subset J$
+\end_inset
+
+, 则
+\begin_inset Formula $\frac{R/I}{J/I}\tilde{=}R/J$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $I$
+\end_inset
+
+是环
+\begin_inset Formula $R$
+\end_inset
+
+的理想, 则
+\begin_inset Formula $f:\{I\subseteq J\subseteq R,J\texttt{是理想}\}\to\{R/I\texttt{的所有理想}\}$
+\end_inset
+
+(
+\begin_inset Formula $J\to J/I$
+\end_inset
+
+)是一一映射;
+\end_layout
+
+\begin_layout Enumerate
+环的特征: 设
+\begin_inset Formula $R$
+\end_inset
+
+是环, 若存在
+\begin_inset Formula $m\in\mathbb{Z}_{+}$
+\end_inset
+
+, 使得
+\begin_inset Formula $\forall r\in R$
+\end_inset
+
+, 有
+\begin_inset Formula $mr=0$
+\end_inset
+
+, 则称满足此条件的最小正整数
+\begin_inset Formula $m$
+\end_inset
+
+为
+\begin_inset Formula $R$
+\end_inset
+
+的特征, 记为
+\begin_inset Formula $charR$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若不存在这样的正整数, 则称
+\begin_inset Formula $charR=0$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+素子环: 含幺环
+\begin_inset Formula $R$
+\end_inset
+
+中同构于
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+或
+\begin_inset Formula $\mathbb{Z}_{m}$
+\end_inset
+
+的子环被称为
+\begin_inset Formula $R$
+\end_inset
+
+的素子环;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $R$
+\end_inset
+
+是交换环, 
+\begin_inset Formula $charR=p$
+\end_inset
+
+是素数, 则对
+\begin_inset Formula $\forall x,y\in R$
+\end_inset
+
+, 有
+\begin_inset Formula $(x+y)^{p}=x^{p}+y^{p}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $R$
+\end_inset
+
+是交换环, 
+\begin_inset Formula $charR=p$
+\end_inset
+
+是素数, 则
+\begin_inset Formula $f:R\to R$
+\end_inset
+
+(
+\begin_inset Formula $r\to r^{p}$
+\end_inset
+
+)是环的自同态;
+\end_layout
+
+\begin_layout Enumerate
+素理想: 若
+\begin_inset Formula $R$
+\end_inset
+
+的理想
+\begin_inset Formula $P$
+\end_inset
+
+满足下面的性质, 则称
+\begin_inset Formula $P$
+\end_inset
+
+为
+\begin_inset Formula $R$
+\end_inset
+
+的素理想:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P\neq R$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A,B$
+\end_inset
+
+是
+\begin_inset Formula $R$
+\end_inset
+
+的任意两个理想, 若
+\begin_inset Formula $AB\subseteq P$
+\end_inset
+
+, 则
+\begin_inset Formula $A\subseteq P$
+\end_inset
+
+或
+\begin_inset Formula $B\subseteq P$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+极大理想: 若
+\begin_inset Formula $R$
+\end_inset
+
+的理想
+\begin_inset Formula $M$
+\end_inset
+
+满足下面的性质, 则称
+\begin_inset Formula $M$
+\end_inset
+
+为
+\begin_inset Formula $R$
+\end_inset
+
+的极大理想:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $M\neq R$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall N\subseteq R$
+\end_inset
+
+是
+\begin_inset Formula $R$
+\end_inset
+
+的理想, 若
+\begin_inset Formula $M\subseteq N\subseteq R$
+\end_inset
+
+, 则
+\begin_inset Formula $N=M$
+\end_inset
+
+或
+\begin_inset Formula $N=R$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $R$
+\end_inset
+
+是含幺交换环, 
+\begin_inset Formula $P$
+\end_inset
+
+是
+\begin_inset Formula $R$
+\end_inset
+
+的理想且
+\begin_inset Formula $P\neq R$
+\end_inset
+
+, 则下面条件相互等价:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $P$
+\end_inset
+
+是
+\begin_inset Formula $R$
+\end_inset
+
+的素理想;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a,b\in R$
+\end_inset
+
+, 若
+\begin_inset Formula $ab\in P$
+\end_inset
+
+, 则
+\begin_inset Formula $a\in P$
+\end_inset
+
+或
+\begin_inset Formula $b\in P$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $R/P$
+\end_inset
+
+为整环;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $R$
+\end_inset
+
+是含幺交换环, 则
+\begin_inset Formula $R$
+\end_inset
+
+是整环
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $(0)$
+\end_inset
+
+为素理想;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $R$
+\end_inset
+
+是含幺交换环, 
+\begin_inset Formula $M\subseteq R$
+\end_inset
+
+是理想, 则
+\begin_inset Formula $M$
+\end_inset
+
+为
+\begin_inset Formula $R$
+\end_inset
+
+的极大理想
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $R/M$
+\end_inset
+
+为域;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+特别的: 含幺交换环
+\begin_inset Formula $R$
+\end_inset
+
+为域的充要条件是
+\begin_inset Formula $(0)$
+\end_inset
+
+为
+\begin_inset Formula $R$
+\end_inset
+
+的极大理想;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+含幺交换环的极大理想是素理想;
+\end_layout
+
+\end_body
+\end_document

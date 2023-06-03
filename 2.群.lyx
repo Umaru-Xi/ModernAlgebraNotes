@@ -1,0 +1,401 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+群
+\end_layout
+
+\begin_layout Enumerate
+结合律: 集合
+\begin_inset Formula $S$
+\end_inset
+
+上的二元运算
+\begin_inset Formula $f$
+\end_inset
+
+称为满足结合律, 是指
+\begin_inset Formula $f(f(x,y),z)=f(x,f(y,z)),x,y,z\in S$
+\end_inset
+
+, 简记为
+\begin_inset Formula $(xy)z=x(yz)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+半群: 具有二元运算“
+\begin_inset Formula $\cdot$
+\end_inset
+
+”的集合
+\begin_inset Formula $S$
+\end_inset
+
+, 若该运算满足结合律, 则
+\begin_inset Formula $(S,\cdot)$
+\end_inset
+
+被称为半群;
+\end_layout
+
+\begin_layout Enumerate
+单位元(幺元): 设
+\begin_inset Formula $(S,\cdot)$
+\end_inset
+
+是半群, 
+\begin_inset Formula $e\in S$
+\end_inset
+
+, 若对
+\begin_inset Formula $\forall x\in S$
+\end_inset
+
+, 有
+\begin_inset Formula $xe=ex=x$
+\end_inset
+
+, 则称
+\begin_inset Formula $e$
+\end_inset
+
+为半群
+\begin_inset Formula $S$
+\end_inset
+
+的单位元;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+单位元唯一: 若
+\begin_inset Formula $e,e'\in S$
+\end_inset
+
+是单位元, 
+\begin_inset Formula $e=ee'=e'$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+左右单位元:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+左单位元: 若
+\begin_inset Formula $e_{L}\in G$
+\end_inset
+
+满足
+\begin_inset Formula $\forall a\in G,e_{L}a=a$
+\end_inset
+
+, 则
+\begin_inset Formula $e_{L}$
+\end_inset
+
+称为左单位元;
+\end_layout
+
+\begin_layout Enumerate
+右单位元: 若
+\begin_inset Formula $e_{R}\in G$
+\end_inset
+
+满足
+\begin_inset Formula $\forall a\in G,ae_{R}=a$
+\end_inset
+
+, 则
+\begin_inset Formula $e_{R}$
+\end_inset
+
+称为右单位元;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+含幺半群: 含有单位元的半群;
+\end_layout
+
+\begin_layout Enumerate
+群: 设
+\begin_inset Formula $G$
+\end_inset
+
+是一个非空集合, 
+\begin_inset Formula $(G,\cdot)$
+\end_inset
+
+是群若
+\begin_inset Formula $G$
+\end_inset
+
+上的二元运算“
+\begin_inset Formula $\cdot$
+\end_inset
+
+”(封闭性)满足:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+结合律: 
+\begin_inset Formula $\forall a,b,c\in G,(ab)c=a(bc)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+单位元(幺元): 
+\begin_inset Formula $\exists e\in G:\forall a\in G,ea=ae=a$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+逆元: 
+\begin_inset Formula $\forall a\in G,\exists a^{-1}\in G,s.t.:a^{-1}a=aa^{-1}=e$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+群的逆元唯一: 若
+\begin_inset Formula $a^{-1},a'^{-1}\in G$
+\end_inset
+
+都是
+\begin_inset Formula $a$
+\end_inset
+
+的逆元, 则
+\begin_inset Formula $e=a^{-1}a=a'^{-1}a=aa^{-1}=aa'^{-1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+含幺半群左右逆元相同: 设
+\begin_inset Formula $(G,\cdot)$
+\end_inset
+
+为一个含幺半群, 若元素
+\begin_inset Formula $a\in G$
+\end_inset
+
+有左逆元
+\begin_inset Formula $a_{L}^{-1}$
+\end_inset
+
+和右逆元
+\begin_inset Formula $a_{R}^{-1}$
+\end_inset
+
+, 则
+\begin_inset Formula $a_{L}^{-1}=a_{R}^{-1}=a^{-1}$
+\end_inset
+
+为
+\begin_inset Formula $a$
+\end_inset
+
+的逆元;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+交换群(阿贝尔群): 满足交换律的群;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $(M,\cdot)$
+\end_inset
+
+是含幺半群, 
+\begin_inset Formula $M^{*}$
+\end_inset
+
+是半群
+\begin_inset Formula $M$
+\end_inset
+
+中的可逆元素全体, 则
+\begin_inset Formula $(M^{*},\cdot)$
+\end_inset
+
+是群;
+\end_layout
+
+\begin_layout Enumerate
+半群
+\begin_inset Formula $(G,\cdot)$
+\end_inset
+
+是群, 当且仅当(右单位元和右逆元定义同样成立):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $G$
+\end_inset
+
+有左单位元
+\begin_inset Formula $e_{L}$
+\end_inset
+
+: 即
+\begin_inset Formula $\forall a\in G:e_{L}a=a$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a\in G$
+\end_inset
+
+, 有左逆元
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+, 使得
+\begin_inset Formula $a^{-1}a=e_{L}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+半群
+\begin_inset Formula $(G,\cdot)$
+\end_inset
+
+是群, 当且仅当: 
+\begin_inset Formula $\forall a,b\in G$
+\end_inset
+
+, 方程
+\begin_inset Formula $ax=b$
+\end_inset
+
+和
+\begin_inset Formula $ya=b$
+\end_inset
+
+在
+\begin_inset Formula $G$
+\end_inset
+
+中均有解;
+\end_layout
+
+\begin_layout Enumerate
+有限半群
+\begin_inset Formula $(G,\cdot)$
+\end_inset
+
+是群, 当且仅当左右消去率都成立: 
+\begin_inset Formula $ax=ay\Rightarrow x=y$
+\end_inset
+
+且
+\begin_inset Formula $xa=ya\Rightarrow x=y$
+\end_inset
+
+;
+\end_layout
+
+\end_body
+\end_document

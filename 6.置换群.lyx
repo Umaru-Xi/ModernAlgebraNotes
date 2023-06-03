@@ -1,0 +1,451 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+置换群
+\end_layout
+
+\begin_layout Enumerate
+置换: 非空集合
+\begin_inset Formula $X$
+\end_inset
+
+到自身的一一映射, 叫做
+\begin_inset Formula $X$
+\end_inset
+
+上的一个置换;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $X=\{a_{1},...,a_{n}\}$
+\end_inset
+
+是有限集合, 则它上面的置换
+\begin_inset Formula $\sigma$
+\end_inset
+
+通常可表示为
+\begin_inset Formula $\sigma=\left(\begin{array}{ccc}
+a_{1} & ... & a_{n}\\
+\sigma(a_{1}) & ... & \sigma(a_{n})
+\end{array}\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+置换的乘积: 置换的乘积定义为映射的复合
+\begin_inset Formula $(\sigma\tau)(a_{i})=\sigma(\tau(a_{i})),a_{i}\in X$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+置换
+\begin_inset Formula $\sigma$
+\end_inset
+
+的逆: 
+\begin_inset Formula $\sigma$
+\end_inset
+
+作为
+\begin_inset Formula $X$
+\end_inset
+
+到
+\begin_inset Formula $X$
+\end_inset
+
+的映射的逆映射;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+对称群与置换群: 集合
+\begin_inset Formula $X$
+\end_inset
+
+上所有置换构成的集合记为
+\begin_inset Formula $S_{X}$
+\end_inset
+
+, 称为集合
+\begin_inset Formula $X$
+\end_inset
+
+上对称群, 它的每个子群均称为集合
+\begin_inset Formula $X$
+\end_inset
+
+上的置换群, 它关于映射复合运算构成群;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+元集合上的对称群
+\begin_inset Formula $S_{n}$
+\end_inset
+
+, 其阶为
+\begin_inset Formula $|S_{n}|=n!$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+固定与移动: 设
+\begin_inset Formula $X=\{1,...,n\},i\in X$
+\end_inset
+
+和
+\begin_inset Formula $\sigma\in S_{n}$
+\end_inset
+
+.
+ 若
+\begin_inset Formula $\sigma(i)=i$
+\end_inset
+
+称为
+\begin_inset Formula $\sigma$
+\end_inset
+
+固定
+\begin_inset Formula $i$
+\end_inset
+
+, 若
+\begin_inset Formula $\sigma(i)\neq i$
+\end_inset
+
+称为
+\begin_inset Formula $\sigma$
+\end_inset
+
+移动
+\begin_inset Formula $i$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+轮换: 设
+\begin_inset Formula $\sigma$
+\end_inset
+
+固定
+\begin_inset Formula $X$
+\end_inset
+
+中的
+\begin_inset Formula $X/\{i_{1},i_{2},...,i_{r}\}$
+\end_inset
+
+, 若
+\begin_inset Formula $\sigma(i_{r-1})=i_{r},\sigma(i_{r})=i_{1}$
+\end_inset
+
+, 则称
+\begin_inset Formula $\sigma$
+\end_inset
+
+为一个长为
+\begin_inset Formula $r$
+\end_inset
+
+的轮换, 记为
+\begin_inset Formula $\sigma=(i_{1}i_{2}...i_{r})$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+对换: 长为
+\begin_inset Formula $2$
+\end_inset
+
+的轮换仅交换
+\begin_inset Formula $X$
+\end_inset
+
+中的一对元素, 通常称为对换;
+\end_layout
+
+\begin_layout Enumerate
+不相交: 若
+\begin_inset Formula $X$
+\end_inset
+
+中的元素被一个置换
+\begin_inset Formula $\sigma$
+\end_inset
+
+移动, 必然被另一个
+\begin_inset Formula $\tau$
+\end_inset
+
+固定, 则称两个置换不相交;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+当两个置换
+\begin_inset Formula $\sigma,\tau$
+\end_inset
+
+不相交时, 必然有
+\begin_inset Formula $\sigma\tau=\tau\sigma$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+每个非恒等置换
+\begin_inset Formula $\sigma\in S_{n}$
+\end_inset
+
+是长度大于
+\begin_inset Formula $1$
+\end_inset
+
+的不相交轮换的乘积;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+每个置换
+\begin_inset Formula $\sigma\in S_{n}$
+\end_inset
+
+都可以写成对换的乘积;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+置换分解成对换乘积的方式不唯一, 但分解成对换乘积时, 对换个数的奇偶性不变;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+奇(偶)置换: 如果置换
+\begin_inset Formula $\sigma\in S_{n}$
+\end_inset
+
+可以写成奇(偶)数个对换的乘积;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+次交错群: 有所有的偶置换构成的群
+\begin_inset Formula $A_{n}:=Kerf=\{\texttt{偶置换}\}\triangleleft S_{n},f:S_{n}\to\{1,-1\}$
+\end_inset
+
+被称为
+\begin_inset Formula $n$
+\end_inset
+
+次交错群, 有
+\begin_inset Formula $[S_{n}:A_{n}]=2,|A_{n}|=\frac{n!}{2}(n\ge2)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+当
+\begin_inset Formula $n\ge2$
+\end_inset
+
+时, 
+\begin_inset Formula $\{(12),(13),...,(1n)\}$
+\end_inset
+
+是
+\begin_inset Formula $S_{n}$
+\end_inset
+
+的一个生成元系;
+\end_layout
+
+\begin_layout Enumerate
+当
+\begin_inset Formula $n\ge3$
+\end_inset
+
+时, 全体长为
+\begin_inset Formula $3$
+\end_inset
+
+的轮换形成
+\begin_inset Formula $A_{n}$
+\end_inset
+
+的一个生成元系;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+置换的型: 置换
+\begin_inset Formula $\sigma\in S_{n}$
+\end_inset
+
+, 将
+\begin_inset Formula $\sigma$
+\end_inset
+
+表示成不相交的轮换之积, 如果其中长为r的轮换共有
+\begin_inset Formula $\lambda_{r}$
+\end_inset
+
+个
+\begin_inset Formula $(1\le r\le n)$
+\end_inset
+
+, 则称
+\begin_inset Formula $\sigma$
+\end_inset
+
+的型为
+\begin_inset Formula $1^{\lambda_{1}}2^{\lambda_{2}}...r^{\lambda_{r}}$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+对称群
+\begin_inset Formula $S_{n}$
+\end_inset
+
+中两个置换共轭的充要条件是它们有相同的型;
+\end_layout
+
+\begin_layout Enumerate
+单群: 只有平凡正规子群的群, 称为单群;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+元素个数大于
+\begin_inset Formula $1$
+\end_inset
+
+的交换群是单群
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+它是素数阶(循环)群;
+\end_layout
+
+\begin_layout Enumerate
+当
+\begin_inset Formula $n\ge5$
+\end_inset
+
+时, 交错群
+\begin_inset Formula $A_{n}$
+\end_inset
+
+是单群;
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document

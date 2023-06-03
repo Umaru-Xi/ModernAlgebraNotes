@@ -1,0 +1,700 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+子群的陪集
+\end_layout
+
+\begin_layout Enumerate
+整数模
+\begin_inset Formula $n$
+\end_inset
+
+加法群: 设
+\begin_inset Formula $n$
+\end_inset
+
+为正整数, 在
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+上定义关系
+\begin_inset Formula $a,b\in\mathbb{Z},a\sim b\Leftrightarrow n|(a-b)$
+\end_inset
+
+(即
+\begin_inset Formula $a\equiv b$
+\end_inset
+
+(
+\begin_inset Formula $mod$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+)), 定义
+\begin_inset Formula $\bar{i}=$
+\end_inset
+
+{
+\begin_inset Formula $m\in\mathbb{Z}|m\equiv i(\mod n)$
+\end_inset
+
+}, 则
+\begin_inset Formula $\mathbb{Z}_{n}=\{\bar{0},\bar{1},...,\overline{n-1}\}$
+\end_inset
+
+.
+ 定义二元运算“
+\begin_inset Formula $+$
+\end_inset
+
+”: 
+\begin_inset Formula $\bar{a}+\bar{b}=\overline{a+b}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathbb{Z}_{n}$
+\end_inset
+
+关于“
+\begin_inset Formula $+$
+\end_inset
+
+”形成交换群, 形成整数模
+\begin_inset Formula $n$
+\end_inset
+
+加法群;
+\end_layout
+
+\begin_layout Enumerate
+设G是群, 
+\begin_inset Formula $A\le G$
+\end_inset
+
+, 定义
+\begin_inset Formula $G$
+\end_inset
+
+上的关系为
+\begin_inset Formula $g,h\in G,g\sim h\Leftrightarrow gh^{-1}\in A$
+\end_inset
+
+, 则
+\begin_inset Formula $\sim$
+\end_inset
+
+是
+\begin_inset Formula $G$
+\end_inset
+
+上的关系, 并且
+\begin_inset Formula $\forall g\in G,[g]=Ag$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+右陪集: 由上面的引理知, 群
+\begin_inset Formula $G$
+\end_inset
+
+可以分拆称一些不同等价关系集合
+\begin_inset Formula $Ag$
+\end_inset
+
+, 每个等价类
+\begin_inset Formula $Ag$
+\end_inset
+
+叫做
+\begin_inset Formula $G$
+\end_inset
+
+对于子群
+\begin_inset Formula $A$
+\end_inset
+
+的右陪集;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+右陪集代表元系: 如果
+\begin_inset Formula $R=$
+\end_inset
+
+{
+\begin_inset Formula $g_{i}|i\in I$
+\end_inset
+
+}是
+\begin_inset Formula $G$
+\end_inset
+
+对于上述等价关系的完全代表元系, 则称它为G对A的右陪集代表元系;
+\end_layout
+
+\begin_layout Enumerate
+右陪集分解: 有
+\begin_inset Formula $G=\cup_{g\in R}Ag$
+\end_inset
+
+, 称之为
+\begin_inset Formula $G$
+\end_inset
+
+对子群
+\begin_inset Formula $A$
+\end_inset
+
+的右陪集分解;
+\end_layout
+
+\begin_layout Enumerate
+指数: 不同右陪集的个数
+\begin_inset Formula $|R|$
+\end_inset
+
+, 记为
+\begin_inset Formula $[G:A]$
+\end_inset
+
+, 称为子群
+\begin_inset Formula $A$
+\end_inset
+
+对群
+\begin_inset Formula $G$
+\end_inset
+
+的指数(指标);
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+左陪集: 类似定义
+\begin_inset Formula $gA$
+\end_inset
+
+为
+\begin_inset Formula $G$
+\end_inset
+
+的左陪集, 左陪集代表元系, 左陪集分解等;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+左陪集与右陪集一一对应, 个数相等;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+集合的阶: 集合
+\begin_inset Formula $G$
+\end_inset
+
+中元素的个数, 记作
+\begin_inset Formula $|G|$
+\end_inset
+
+或
+\begin_inset Formula $\#(G)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+拉格朗日(Lagrange)定理: 设
+\begin_inset Formula $G$
+\end_inset
+
+是有限群, 
+\begin_inset Formula $A\le G$
+\end_inset
+
+, 则
+\begin_inset Formula $|G|=|A|\cdot[G:A]$
+\end_inset
+
+.
+ 特别地, 群
+\begin_inset Formula $G$
+\end_inset
+
+的每个子群的阶都是
+\begin_inset Formula $G$
+\end_inset
+
+的阶的因子;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+素数阶群只有平凡子群;
+\end_layout
+
+\begin_layout Enumerate
+设
+\begin_inset Formula $G$
+\end_inset
+
+是有限群, 则
+\begin_inset Formula $G$
+\end_inset
+
+中每个元素
+\begin_inset Formula $g$
+\end_inset
+
+的阶均是
+\begin_inset Formula $|G|$
+\end_inset
+
+的因子;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p$
+\end_inset
+
+(素数)阶群
+\begin_inset Formula $G$
+\end_inset
+
+均是Abel群(交换群);
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+素数阶群一定是循环群;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+非Abel群的最小阶数是
+\begin_inset Formula $6$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $G$
+\end_inset
+
+是有限群, 
+\begin_inset Formula $A,B\le G$
+\end_inset
+
+, 则:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $|AB|=|A|\cdot|B|/|A\cap B|$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $A\le B\le G$
+\end_inset
+
+, 则
+\begin_inset Formula $[G:A]=[G:B][B:A]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $[G:A\cap B]\le[G:A][G:B]$
+\end_inset
+
+.
+ 若
+\begin_inset Formula $[G:A]$
+\end_inset
+
+和
+\begin_inset Formula $[G:B]$
+\end_inset
+
+互素, 则
+\begin_inset Formula $[G:A\cap B]=[G:A][G:B]$
+\end_inset
+
+, 且
+\begin_inset Formula $AB=G$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+共轭: 设
+\begin_inset Formula $G$
+\end_inset
+
+是群, 
+\begin_inset Formula $a,b\in G$
+\end_inset
+
+, 称
+\begin_inset Formula $b^{-1}ab$
+\end_inset
+
+为
+\begin_inset Formula $a$
+\end_inset
+
+的共轭元素;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+集合共轭: 
+\begin_inset Formula $A,B\subseteq G$
+\end_inset
+
+, 若
+\begin_inset Formula $\exists g\in G,s.t.:g^{-1}Ag=B$
+\end_inset
+
+称
+\begin_inset Formula $A$
+\end_inset
+
+与
+\begin_inset Formula $B$
+\end_inset
+
+共轭;
+\end_layout
+
+\begin_layout Enumerate
+共轭类: 群
+\begin_inset Formula $G$
+\end_inset
+
+的子集之间的共轭关系是等价关系, 每个等价类被称为共轭类;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+集合
+\begin_inset Formula $g^{-1}Ag$
+\end_inset
+
+与
+\begin_inset Formula $A$
+\end_inset
+
+之间一一映射;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $A$
+\end_inset
+
+是有限集合, 则
+\begin_inset Formula $|g^{-1}Ag|=|A|$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+共轭子群: 若子群
+\begin_inset Formula $A\le G$
+\end_inset
+
+, 则
+\begin_inset Formula $g^{-1}Ag\le G$
+\end_inset
+
+称为
+\begin_inset Formula $A$
+\end_inset
+
+的共轭子群;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+正规化子: 设
+\begin_inset Formula $G$
+\end_inset
+
+是群, 子集
+\begin_inset Formula $M\subseteq G$
+\end_inset
+
+, 则
+\begin_inset Formula $N_{G}(M)=\{g\in G|g^{-1}Mg=M\}$
+\end_inset
+
+是
+\begin_inset Formula $G$
+\end_inset
+
+的子群, 称之为
+\begin_inset Formula $M$
+\end_inset
+
+的正规化子;
+\end_layout
+
+\begin_layout Enumerate
+中心化子: 设
+\begin_inset Formula $G$
+\end_inset
+
+是群, 子集
+\begin_inset Formula $M\subseteq G$
+\end_inset
+
+, 则
+\begin_inset Formula $C_{G}(M)=\{g\in G|g^{-1}ag=a,\forall a\in M\}$
+\end_inset
+
+是
+\begin_inset Formula $G$
+\end_inset
+
+的子群, 称之为
+\begin_inset Formula $M$
+\end_inset
+
+的中心化子;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+中心: 记
+\begin_inset Formula $C(G)=C_{G}(G)$
+\end_inset
+
+称为群
+\begin_inset Formula $G$
+\end_inset
+
+的中心;
+\end_layout
+
+\begin_layout Enumerate
+中心元素: C(G)中的元素;
+\end_layout
+
+\begin_layout Enumerate
+一些结论: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $G$
+\end_inset
+
+是交换群, 等价于
+\begin_inset Formula $G=C(G)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C_{G}(M)\le N_{G}(M)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a\in G,C_{G}(a)=N_{G}(a)$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $G$
+\end_inset
+
+是群, 子集
+\begin_inset Formula $M\subseteq G$
+\end_inset
+
+, 则与
+\begin_inset Formula $M$
+\end_inset
+
+共轭的子集个数为
+\begin_inset Formula $[G:N_{G}(M)]$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $G$
+\end_inset
+
+是群, 
+\begin_inset Formula $a\in G$
+\end_inset
+
+, 则与
+\begin_inset Formula $a$
+\end_inset
+
+共轭的元素个数等于
+\begin_inset Formula $[G:C_{G}(a)]$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $p$
+\end_inset
+
+为素数, 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+, 
+\begin_inset Formula $G$
+\end_inset
+
+为
+\begin_inset Formula $p^{n}$
+\end_inset
+
+阶群, 则
+\begin_inset Formula $|C(G)|>1$
+\end_inset
+
+, 即
+\begin_inset Formula $G$
+\end_inset
+
+有非单位元的中心元素;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $p$
+\end_inset
+
+为素数, 
+\begin_inset Formula $p^{2}$
+\end_inset
+
+阶群
+\begin_inset Formula $G$
+\end_inset
+
+为Abel群;
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

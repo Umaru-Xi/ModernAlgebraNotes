@@ -1,0 +1,887 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass ctex-article
+\use_default_options true
+\maintain_unincluded_children false
+\language chinese-simplified
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "STSong"
+\font_sans "default" "STHeiti"
+\font_typewriter "default" "STFangsong"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style plain
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+子群
+\end_layout
+
+\begin_layout Enumerate
+子群: 设
+\begin_inset Formula $(G,\cdot)$
+\end_inset
+
+为群, 
+\begin_inset Formula $S$
+\end_inset
+
+是
+\begin_inset Formula $G$
+\end_inset
+
+的一个非空子集, 若
+\begin_inset Formula $S$
+\end_inset
+
+对
+\begin_inset Formula $G$
+\end_inset
+
+的运算“
+\begin_inset Formula $\cdot$
+\end_inset
+
+”也构成群, 则称
+\begin_inset Formula $S$
+\end_inset
+
+为
+\begin_inset Formula $G$
+\end_inset
+
+的子群, 表示为
+\begin_inset Formula $S\le G$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+真子群: 若
+\begin_inset Formula $S\neq G,S\le G$
+\end_inset
+
+, 则
+\begin_inset Formula $S$
+\end_inset
+
+是
+\begin_inset Formula $G$
+\end_inset
+
+的真子群, 记为
+\begin_inset Formula $S<G$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+记号:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+设
+\begin_inset Formula $G$
+\end_inset
+
+是一个群, 
+\begin_inset Formula $A,B$
+\end_inset
+
+是
+\begin_inset Formula $G$
+\end_inset
+
+的非空子集, 
+\begin_inset Formula $g\in G$
+\end_inset
+
+, 记: 
+\begin_inset Formula $gA=\{ga|a\in A\}$
+\end_inset
+
+, 
+\begin_inset Formula $Ag=\{ag|a\in A\}$
+\end_inset
+
+, 
+\begin_inset Formula $AB=\{ab|a\in A,b\in B\}$
+\end_inset
+
+, 
+\begin_inset Formula $A^{-1}=\{a^{-1}|a\in A\}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+平凡子群: 特殊的子群
+\begin_inset Formula ${e}$
+\end_inset
+
+, 
+\begin_inset Formula $G$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+子群的性质:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $H\le G$
+\end_inset
+
+, 则
+\begin_inset Formula $H$
+\end_inset
+
+的单位元就是
+\begin_inset Formula $G$
+\end_inset
+
+的单位元;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1},H_{2}\le G\Rightarrow H_{1}\cap H_{2}\le G$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1},H_{2}\le G$
+\end_inset
+
+, 则
+\begin_inset Formula $H_{1}\cup H_{2}\le G$
+\end_inset
+
+
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $H_{1}\subseteq H_{2}$
+\end_inset
+
+或者
+\begin_inset Formula $H_{2}\subseteq H_{1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $H_{1},H_{2}\le G$
+\end_inset
+
+, 则
+\begin_inset Formula $H_{1}H_{2}\le G\Leftrightarrow H_{1}H_{2}=H_{2}H_{1}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+子群的判定定理: 设S是群G的非空子集, 则下面三个命题等价:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+S是群G的子群;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a,b\in S$
+\end_inset
+
+, 有
+\begin_inset Formula $ab\in S$
+\end_inset
+
+和
+\begin_inset Formula $a^{-1}\in S$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a,b\in S$
+\end_inset
+
+, 有
+\begin_inset Formula $ab^{-1}\in S$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+实数域上一般线性群的特殊子群:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+次特殊线性群: 
+\begin_inset Formula $SL(n,\mathbb{R})=\{A\in GL(n,\mathbb{R})||A|=1\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+次正交线性群: 
+\begin_inset Formula $O_{n}(\mathbb{R})=\{A\in GL(n,\mathbb{R})|A^{t}A=I_{n}\}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+次特殊正交群: 
+\begin_inset Formula $SO_{n}(\mathbb{R})=\{A\in GL(n,\mathbb{R})|A^{t}A=I_{n},|A|=1\}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+元素的幂: 设
+\begin_inset Formula $G$
+\end_inset
+
+是群, 
+\begin_inset Formula $a\in G,n\in\mathbb{N}$
+\end_inset
+
+, 定义
+\begin_inset Formula $a^{n}=a\cdot\cdot\cdot a$
+\end_inset
+
+(
+\begin_inset Formula $n$
+\end_inset
+
+个), 
+\begin_inset Formula $a^{0}=e$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+注意: 一般
+\begin_inset Formula $a^{n}b^{n}\neq(ab)^{n}$
+\end_inset
+
+, 只有
+\begin_inset Formula $ab=ba$
+\end_inset
+
+时等号成立;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+元素的阶: 设
+\begin_inset Formula $G$
+\end_inset
+
+是群, 
+\begin_inset Formula $a\in G$
+\end_inset
+
+, 使
+\begin_inset Formula $a^{n}=e$
+\end_inset
+
+成立的最小正整数
+\begin_inset Formula $n$
+\end_inset
+
+称为元素的阶, 记作
+\begin_inset Formula $o(a)$
+\end_inset
+
+; 若不存在正整数
+\begin_inset Formula $n$
+\end_inset
+
+满足上面的条件, 则称
+\begin_inset Formula $a$
+\end_inset
+
+的阶是无限的;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $o(a)=n$
+\end_inset
+
+, 则
+\begin_inset Formula $a^{m}=e\Leftrightarrow n|m$
+\end_inset
+
+.
+ 
+\begin_inset Formula $n|m$
+\end_inset
+
+表示
+\begin_inset Formula $n$
+\end_inset
+
+整除
+\begin_inset Formula $m$
+\end_inset
+
+, 即
+\begin_inset Formula $\frac{m}{n}$
+\end_inset
+
+是整数;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $o(a)=n$
+\end_inset
+
+, 则对每个正整数
+\begin_inset Formula $m$
+\end_inset
+
+, 
+\begin_inset Formula $a^{m}$
+\end_inset
+
+的阶是
+\begin_inset Formula $\frac{n}{(m,n)}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $(m,n)$
+\end_inset
+
+表示
+\begin_inset Formula $m$
+\end_inset
+
+和
+\begin_inset Formula $n$
+\end_inset
+
+的最大公因数;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a,b\in G,o(a)=m,o(b)=n$
+\end_inset
+
+, 若
+\begin_inset Formula $(m,n)=1$
+\end_inset
+
+且
+\begin_inset Formula $ab=ba$
+\end_inset
+
+, 则
+\begin_inset Formula $o(ab)=mn$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+若
+\begin_inset Formula $(m,n)=1$
+\end_inset
+
+不满足, 则
+\begin_inset Formula $o(ab)=\frac{mn}{(m,n)}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+若除单位元外其他元素都是
+\begin_inset Formula $2$
+\end_inset
+
+阶元, 则
+\begin_inset Formula $G$
+\end_inset
+
+是交换群;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+生成子群: 设
+\begin_inset Formula $G$
+\end_inset
+
+是群, 
+\begin_inset Formula $S\subseteq G$
+\end_inset
+
+, 则
+\begin_inset Formula $G$
+\end_inset
+
+中包含
+\begin_inset Formula $S$
+\end_inset
+
+的最小子群
+\begin_inset Formula $A$
+\end_inset
+
+叫做由
+\begin_inset Formula $S$
+\end_inset
+
+生成的子群, 记作
+\begin_inset Formula $A=<S>$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+等价定义: 
+\begin_inset Formula $A$
+\end_inset
+
+是
+\begin_inset Formula $G$
+\end_inset
+
+中包含
+\begin_inset Formula $S$
+\end_inset
+
+的所有子群之交, 
+\begin_inset Formula $<S>=\{a_{1}...a_{m}|m\ge0,a_{i}\in S\cup S^{-1}\}$
+\end_inset
+
+; 当
+\begin_inset Formula $m=0$
+\end_inset
+
+时, 
+\begin_inset Formula $a_{1}...a_{m}=e$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+生成元系: 若
+\begin_inset Formula $G=<S>$
+\end_inset
+
+, 则称
+\begin_inset Formula $S$
+\end_inset
+
+是
+\begin_inset Formula $G$
+\end_inset
+
+的一个生成元系;
+\end_layout
+
+\begin_layout Enumerate
+有限生成群: 若
+\begin_inset Formula $G=<S>$
+\end_inset
+
+, 且
+\begin_inset Formula $S$
+\end_inset
+
+是有限集合, 则称
+\begin_inset Formula $G$
+\end_inset
+
+为有限生成群;
+\end_layout
+
+\begin_layout Enumerate
+循环群: 若
+\begin_inset Formula $G=<a>$
+\end_inset
+
+, 则称
+\begin_inset Formula $S$
+\end_inset
+
+为循环群;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n$
+\end_inset
+
+阶有限群: 设
+\begin_inset Formula $G=<a>$
+\end_inset
+
+为循环群, 若
+\begin_inset Formula $o(a)=n$
+\end_inset
+
+, 则
+\begin_inset Formula $G$
+\end_inset
+
+为
+\begin_inset Formula $n$
+\end_inset
+
+阶有限群;
+\end_layout
+
+\begin_layout Enumerate
+无限群: 设
+\begin_inset Formula $G=<a>$
+\end_inset
+
+为循环群, 若
+\begin_inset Formula $a$
+\end_inset
+
+的阶无限, 则
+\begin_inset Formula $G$
+\end_inset
+
+为无限群;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+关系: 若
+\begin_inset Formula $A$
+\end_inset
+
+是集合, 集合
+\begin_inset Formula $A\times A$
+\end_inset
+
+的一个子集
+\begin_inset Formula $R$
+\end_inset
+
+叫做集合
+\begin_inset Formula $A$
+\end_inset
+
+上的一个关系;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+如果
+\begin_inset Formula $(a,b)\in R$
+\end_inset
+
+, 称
+\begin_inset Formula $a$
+\end_inset
+
+和
+\begin_inset Formula $b$
+\end_inset
+
+有关系
+\begin_inset Formula $R$
+\end_inset
+
+, 写成
+\begin_inset Formula $aRb$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+等价关系: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+自反性: 
+\begin_inset Formula $\forall a\in A,a\sim a$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+对称性: 若
+\begin_inset Formula $a\sim b$
+\end_inset
+
+, 则
+\begin_inset Formula $b\sim a$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+传递性: 若
+\begin_inset Formula $a\sim b,b\sim c$
+\end_inset
+
+, 则
+\begin_inset Formula $a\sim c$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+等价类: 具有等价关系的元素全体称为一个等价类, 记作
+\begin_inset Formula $[a]$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a\in[a]$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall b,c\in[a]\Rightarrow b\sim c$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall b\in[a]\Rightarrow[b]=[a]$
+\end_inset
+
+;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+代表元: 
+\begin_inset Formula $[a]$
+\end_inset
+
+中任取一个元素
+\begin_inset Formula $b$
+\end_inset
+
+, 则可以称
+\begin_inset Formula $b$
+\end_inset
+
+为等价类
+\begin_inset Formula $[a]$
+\end_inset
+
+的代表元;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+不同等价类不相交;
+\end_layout
+
+\begin_layout Enumerate
+若
+\begin_inset Formula $A=\cup_{i\in I}[a_{i}],[a_{i}],i\in I$
+\end_inset
+
+两两不相交, 从每个等价类
+\begin_inset Formula $[a_{i}]$
+\end_inset
+
+中取一个元素
+\begin_inset Formula $b_{i}$
+\end_inset
+
+, 则
+\begin_inset Formula $R=\{b_{i}\}$
+\end_inset
+
+ 具有性质: 
+\begin_inset Formula $A$
+\end_inset
+
+中每个元素都等价于
+\begin_inset Formula $b_{i}$
+\end_inset
+
+, 而不同的
+\begin_inset Formula $b_{i}$
+\end_inset
+
+彼此不等价, 我们把这样的
+\begin_inset Formula $R$
+\end_inset
+
+叫做
+\begin_inset Formula $A$
+\end_inset
+
+对于等价关系
+\begin_inset Formula $\sim$
+\end_inset
+
+的完全代表系.
+ 于是
+\begin_inset Formula $A=\cup_{a\in R}[a]$
+\end_inset
+
+(不相交);
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+分拆: 若集合
+\begin_inset Formula $A=\cup_{i\in I}A_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $A_{i},i\in I$
+\end_inset
+
+两两不相交, 则称{
+\begin_inset Formula ${A_{i}|i\in I}$
+\end_inset
+
+}是
+\begin_inset Formula $A$
+\end_inset
+
+的一个分拆;
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+结论: 
+\begin_inset Formula $A$
+\end_inset
+
+上的等价关系与
+\begin_inset Formula $A$
+\end_inset
+
+上的分拆一一对应;
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
